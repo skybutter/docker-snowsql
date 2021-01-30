@@ -27,7 +27,7 @@ RUN bash snowsql-${VERSION}-linux_x86_64.bash
 # Switch to the non-root user
 USER snowflake
 
-# Run the SnowSQL client once, allowing it to auto-upgrade to the latest version.
+# Run the SnowSQL client once, allowing it to auto-upgrade to the latest minor version (1.1.x).
 # See https://docs.snowflake.com/en/user-guide/snowsql-install-config.html#label-understanding-auto-upgrades
 RUN snowsql -v
 
